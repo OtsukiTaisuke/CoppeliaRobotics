@@ -1,0 +1,16 @@
+rosでcoppelia用のパッケージ作成したら
+cmakeファイルの末尾に
+set(COPPELIA_LIBRARIES
+    $ENV{HOME}/Coppeliaのディレクトリ名/programing/remoteApiBindings/lib/lib/ubuntu18_4/remoteApi.so
+)
+add_executable( node名　src/cppファイル)
+target_link_libraries(node名
+　${COPPELIA_LIBRARIES}
+    ${catkin_LIBRARIES}
+)
+を追加
+そしてターミナルで
+sudo cp Coppeliaのディレクトリ名/programing/remoteApiBindings/lib/lib/ubuntu18_4/remoteApi.so  /usr/local/lib/libremoteApi.so.1
+もしくは
+sudo cp Coppeliaのディレクトリ名/programing/remoteApiBindings/lib/lib/ubuntu18_4/remoteApi.so  /usr/lib/libremoteApi.so.1
+でrosとつなげることができました。
