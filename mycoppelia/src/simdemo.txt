@@ -1,2 +1,5 @@
+https://moryu-io-studio.hatenablog.com/entry/2017/12/16/221623
+
+
 simExtRemoteApiStart(19999,1300,true,false)
 
