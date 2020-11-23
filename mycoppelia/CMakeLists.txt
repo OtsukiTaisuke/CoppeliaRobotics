@@ -208,7 +208,7 @@ include_directories(
 
 
 set(SIM_PATH
-	$ENV{HOME}/CoppeliaSim_Pro_v400/programming
+    $ENV{HOME}/CoppeliaSim_EDU_v410/programming
 	)
 include_directories(
 	${SIM_PATH}/include
